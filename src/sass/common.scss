@@ -1,0 +1,245 @@
+@import "bootstrap";
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: $text-color !important;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $brand-primary;
+}
+::-moz-selection { 
+    color: $light;
+    background: $brand-primary;
+}
+
+::selection {
+    color: $light;
+    background: $brand-primary;
+}
+html {
+    font-size: 100%;
+}
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.sec-space {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+
+/* Header */
+.navigation {
+	position: relative;
+}
+.header-logo {
+	display: inline-block;
+}
+
+/* Section 1 */
+
+#banner {
+	background: url(../img/ban-left.png) 100% 0 no-repeat;
+	// background-size: contain;
+}
+.left-ban {
+	margin-top: 8.5rem;
+	h2 {
+		font-size: rem(58.5);
+		text-transform: uppercase;
+		font-weight: $font-light;
+		margin: 0;
+		line-height: 1;
+		letter-spacing: 13px;
+		color: #4a4444;
+		b {
+			font-size: rem(74);
+			letter-spacing: 2px;
+			color: $brand-primary;
+			display: block;
+			font-weight: $font-bold;
+		}
+	}
+	p {
+		font-size: rem(23);
+		font-weight: $font-light;
+		color: #454545;
+		margin: 23px 0; 
+	}
+	.btn-dark {
+		background-color: #521d2c;
+		border-radius: 8px;
+		padding: 10px 75px;
+		font-size: rem(24);
+		font-weight: $font-semibold;
+		color: #fff;
+		@include transition(all 0.35s ease);
+		&:hover {
+			background-color: darken(#521d2c, 8%);
+		}
+	}
+}
+@media screen and (min-width: $screen-sm) {
+	header {
+		padding: 70px 0 0;
+	}
+	#menu-wrapper, .menu-close {
+		display: none;
+	}
+	.header-logo {
+		width: 150px;
+	}
+	#menu--slide-right, .header-logo {
+		vertical-align: bottom;
+		font-size: 0;
+	}
+	#menu--slide-right {
+		width: calc(100% - 154px);
+		display: inline-block;
+		text-align: right;
+	}
+	.menu-items {
+		padding: 0;
+		margin: 0;
+		.menu-item {}
+		li {
+			display: inline-block;
+			margin-right: 5%;
+			a {
+				display: block;
+				color: $light;
+				font-size: rem(20);
+			}
+		}
+	}
+}
+
+/* Sec 2 pos */
+
+#pos-sec {
+	background: url(../img/purchase.png) 100% 100% no-repeat;
+}
+.pos {
+	h2 {
+		font-size: rem(47.79);
+		color: #3c3c3c;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+}
+.purchase-box {
+	figure, figcaption {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0;
+	}
+	figure {
+		width: 50%;
+		img {
+			max-width: 100%;
+		}
+	}
+	figcaption {
+		width: 25%;
+		max-width: 340px;
+		margin-left: 6%;
+	}
+	h3 {
+		font-size: rem(38);
+		color: #212121;
+		position: relative;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		&:before {
+			content: "Purchase";
+			color: #212121;
+			font-size: rem(87.89);
+			opacity: 0.09;
+			position: absolute;
+			top: -75px;
+			text-transform: uppercase;
+			left: 30px;
+		}
+	}
+	p {
+		font-size: rem(23);
+		color: #6e6e6e;
+		margin-top: 0;
+	}
+}
+
+/* Sec 3 Reorder */
+#reorder {
+	background: url(../img/reorder-bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.reorder-box {
+	position: relative;
+	background: url(../img/reorder-man.png) 0 -135px no-repeat;
+	// overflow: hidden;
+	text-align: right;
+	figure, figcaption {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0;
+	}
+	figure {
+		width: 50%;
+		position: relative;
+		z-index: 9;
+		img {
+			max-width: 100%;
+			margin: -60px 0 0;
+		}
+	}
+	figcaption {
+		width: 25%;
+		max-width: 340px;
+		margin: 60px 6% 0 0;
+	}
+	h3 {
+		font-size: rem(38);
+		color: $light;
+		position: relative;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		&:before {
+			content: "Reorder";
+			color: #33171e;
+			font-size: rem(118);
+			opacity: 0.1;
+			letter-spacing: 18px;
+			position: absolute;
+			top: -115px;
+			text-transform: uppercase;
+			left: 35px;
+		}
+	}
+	p {
+		font-size: rem(23);
+		color: #f5f5f5;
+		margin-top: 0;
+	}
+	.reorder-man {
+		position: absolute;
+		left: 5%;
+		bottom: 0;
+	}
+}
+
+@media screen and (min-width: $screen-sm) {
+	#menu--slide-right {}
+}

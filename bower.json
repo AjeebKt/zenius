@@ -1,0 +1,28 @@
+{
+  "name": "zenius",
+  "description": "Portfolio",
+  "main": "build/js/custom.min.js",
+  "authors": [
+    "Ajeeb"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "template",
+    "admin",
+    "bootstrap",
+    "theme",
+    "backend",
+    "responsive"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
