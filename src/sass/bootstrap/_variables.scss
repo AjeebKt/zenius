@@ -3,7 +3,7 @@ $browser-context: 16; // Default
 @function rem($pixels, $context: $browser-context) {
 	@return #{$pixels/$context}rem
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,800');
 //
 // Variables
 // --------------------------------------------------
@@ -42,6 +42,7 @@ $font-light:     		300 !default;
 $font-regular:     		400 !default;
 $font-semibold:     	500 !default;
 $font-bold:     		600 !default;
+$font-bolder:     		800 !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;

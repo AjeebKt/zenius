@@ -48,6 +48,13 @@ html {
 .header-logo {
 	display: inline-block;
 }
+.vertical-flex {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 /* Section 1 */
 
@@ -117,7 +124,7 @@ html {
 		.menu-item {}
 		li {
 			display: inline-block;
-			margin-right: 5%;
+			margin-left: 5%;
 			a {
 				display: block;
 				color: $light;
@@ -138,6 +145,7 @@ html {
 		color: #3c3c3c;
 		text-transform: uppercase;
 		margin-bottom: 60px;
+		font-weight: $font-bold;
 	}
 }
 .purchase-box {
@@ -163,6 +171,7 @@ html {
 		position: relative;
 		text-transform: uppercase;
 		margin-bottom: 15px;
+		font-weight: $font-bold;
 		&:before {
 			content: "Purchase";
 			color: #212121;
@@ -215,6 +224,7 @@ html {
 		color: $light;
 		position: relative;
 		text-transform: uppercase;
+		font-weight: $font-bold;
 		margin-bottom: 15px;
 		&:before {
 			content: "Reorder";
@@ -240,6 +250,199 @@ html {
 	}
 }
 
+/* promo-crm */
+#promo-crm {
+	// background: url(../img/reorder-bg.jpg) center no-repeat;
+	padding: 10% 0;
+}
+.crm-box {
+	figcaption, figure {
+		display: inline-block;
+	}
+	figure {
+		position: relative;
+		z-index: 9;
+		img {
+			max-width: 100%;
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	.crm-lorem {
+		background: transparent url('../img/promo-crm-left.jpg') left top no-repeat;
+		background-size: 100%;
+		img {
+			opacity: 0;
+		}
+	}
+	.crm-lorem, .crm-lorem-im2 {
+		width: 50%;
+		float: left;
+	}
+	.crm-lorem {
+		padding-right: 5px;
+		position: relative;
+		span {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			right: 20px;
+			font-weight: $font-light;
+			color: $light;
+			text-transform: uppercase;
+			font-size: 30px;
+			line-height: 1.2;
+			b {
+				line-height: 1;
+				font-size: 50px;
+				font-weight: $font-bolder;
+			}
+		}
+	}
+	.crm-lorem-im2 {
+		padding-left: 5px;
+	}
+	figcaption {
+		padding: 0 10% 0 3%;
+	}
+	h3 {
+		font-size: rem(38);
+		color: $brand-primary;
+		position: relative;
+		text-transform: uppercase;
+		font-weight: $font-bold;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: rem(23);
+		color: #6e6e6e;
+		margin-top: 0;
+		padding-right: 20px;
+	}
+}
+
+/* security */
+#security {
+	background: url(../img/security-bg.jpg) center no-repeat;
+	padding: 7% 0;
+	.secure-box {
+		figure, figcaption {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 0;
+		}
+		figure {
+			img {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+		figcaption {
+		}
+		h3 {
+			font-size: rem(38);
+			color: $brand-primary;
+			position: relative;
+			text-transform: uppercase;
+			margin: 15px 0;
+			font-weight: $font-bold;
+		}
+		p {
+			font-size: rem(23);
+			color: #6e6e6e;
+			margin-top: 0;
+		}
+	}
+}
+@media screen and (min-width: $screen-sm) {
+	#menu--slide-right {}
+}
+
+/* Inventory */
+#inventory {
+	background: url(../img/inventory-bg.jpg) center no-repeat;
+	padding: 7% 0;
+	.inventory-box {
+		background-color: $light;
+		position: relative;
+		max-width: 900px;
+		margin: 0 auto;
+		border-radius: 4px;
+		height: 500px;
+		right: -150px;
+		@include box-shadow(0 0 25px -5px rgba(0, 0, 0, 0.5));
+		figure {
+			width: 610px;
+			height: 380px;
+			position: absolute;
+			left: 0;
+		    top: 50%;
+		    transform: translate(-50%, -50%);
+		} 
+		figcaption {
+			padding-left: 350px;
+		}
+		figure {
+			img {
+				max-width: 100%;
+				width: 100%;
+				border-radius: 5px;
+			}
+		}
+		figcaption {
+		}
+		h3 {
+			font-size: rem(38);
+			color: $brand-primary;
+			position: relative;
+			text-transform: uppercase;
+			margin: 15px 0;
+			font-weight: $font-bold;
+		}
+		p {
+			font-size: rem(23);
+			color: #6e6e6e;
+			margin-top: 0;
+		}
+	}
+}
+@media screen and (min-width: $screen-sm) {
+	#menu--slide-right {}
+}
+
+/* Inventory */
+#accounting {
+	// background: url(../img/accounting-bg.jpg) center no-repeat;
+	padding: 7% 0;
+	.accounting-box {
+		figure, figcaption {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 0;
+		}
+		figure {
+			img {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+		figcaption {
+		}
+		h3 {
+			font-size: rem(38);
+			color: $brand-primary;
+			position: relative;
+			text-transform: uppercase;
+			margin: 15px 0;
+			font-weight: $font-bold;
+		}
+		p {
+			font-size: rem(23);
+			color: #6e6e6e;
+			margin-top: 0;
+		}
+	}
+}
 @media screen and (min-width: $screen-sm) {
 	#menu--slide-right {}
 }
