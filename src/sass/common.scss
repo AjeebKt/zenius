@@ -52,8 +52,16 @@ html {
 	display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
+}
+
+section {
+	h3 {
+		font-size: rem(38);
+	}
+	p {
+		font-size: rem(23);
+	}
 }
 
 /* Section 1 */
@@ -81,7 +89,6 @@ html {
 		}
 	}
 	p {
-		font-size: rem(23);
 		font-weight: $font-light;
 		color: #454545;
 		margin: 23px 0; 
@@ -166,7 +173,6 @@ html {
 		margin-left: 6%;
 	}
 	h3 {
-		font-size: rem(38);
 		color: #212121;
 		position: relative;
 		text-transform: uppercase;
@@ -184,7 +190,6 @@ html {
 		}
 	}
 	p {
-		font-size: rem(23);
 		color: #6e6e6e;
 		margin-top: 0;
 	}
@@ -220,7 +225,6 @@ html {
 		margin: 60px 6% 0 0;
 	}
 	h3 {
-		font-size: rem(38);
 		color: $light;
 		position: relative;
 		text-transform: uppercase;
@@ -239,7 +243,6 @@ html {
 		}
 	}
 	p {
-		font-size: rem(23);
 		color: #f5f5f5;
 		margin-top: 0;
 	}
@@ -306,7 +309,6 @@ html {
 		padding: 0 10% 0 3%;
 	}
 	h3 {
-		font-size: rem(38);
 		color: $brand-primary;
 		position: relative;
 		text-transform: uppercase;
@@ -314,7 +316,6 @@ html {
 		margin-bottom: 15px;
 	}
 	p {
-		font-size: rem(23);
 		color: #6e6e6e;
 		margin-top: 0;
 		padding-right: 20px;
@@ -340,7 +341,6 @@ html {
 		figcaption {
 		}
 		h3 {
-			font-size: rem(38);
 			color: $brand-primary;
 			position: relative;
 			text-transform: uppercase;
@@ -348,7 +348,6 @@ html {
 			font-weight: $font-bold;
 		}
 		p {
-			font-size: rem(23);
 			color: #6e6e6e;
 			margin-top: 0;
 		}
@@ -392,7 +391,6 @@ html {
 		figcaption {
 		}
 		h3 {
-			font-size: rem(38);
 			color: $brand-primary;
 			position: relative;
 			text-transform: uppercase;
@@ -400,7 +398,6 @@ html {
 			font-weight: $font-bold;
 		}
 		p {
-			font-size: rem(23);
 			color: #6e6e6e;
 			margin-top: 0;
 		}
@@ -410,7 +407,7 @@ html {
 	#menu--slide-right {}
 }
 
-/* Inventory */
+/* Accounting */
 #accounting {
 	// background: url(../img/accounting-bg.jpg) center no-repeat;
 	padding: 7% 0;
@@ -429,7 +426,6 @@ html {
 		figcaption {
 		}
 		h3 {
-			font-size: rem(38);
 			color: $brand-primary;
 			position: relative;
 			text-transform: uppercase;
@@ -437,8 +433,82 @@ html {
 			font-weight: $font-bold;
 		}
 		p {
-			font-size: rem(23);
 			color: #6e6e6e;
+			margin-top: 0;
+		}
+	}
+}
+@media screen and (min-width: $screen-sm) {
+	#menu--slide-right {}
+}
+
+/* Sales */
+#sales {
+	background: url(../img/sales-bg.jpg) center no-repeat;
+	background-size: cover;
+	// padding: 7% 0;
+	.sales-box {
+	    flex-direction: row-reverse;
+		figure {
+			margin: -50px 0;
+			img {
+				@include box-shadow(0 0 60px -7px rgba(0, 0, 0, 0.15));
+				border: 12px solid $light;
+				border-radius: 6px;
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+		figcaption {
+		}
+		h3 {
+			color: $light;
+			position: relative;
+			text-transform: uppercase;
+			margin: 15px 0;
+			font-weight: $font-bold;
+		}
+		p {
+			color: $light;
+			margin-top: 0;
+		}
+	}
+}
+@media screen and (min-width: $screen-sm) {
+	#menu--slide-right {}
+}
+
+/* Business Intelligence */
+#buz {
+	background: url(../img/security-bg.jpg) center no-repeat;
+	background-size: cover;
+	padding: 10% 0 9%;
+	.buz-box {
+	    // flex-direction: row-reverse;
+	    position: relative;
+		figure {
+			img {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+		figcaption {
+			position: absolute;
+			bottom: -110px;
+		    right: 140px;
+			background-color: $brand-primary;
+			padding: 0 25px;
+			border-radius: 6px;
+		}
+		h3 {
+			color: $light;
+			position: relative;
+			text-transform: uppercase;
+			margin: 15px 0;
+			font-weight: $font-bold;
+		}
+		p {
+			color: $light;
 			margin-top: 0;
 		}
 	}

@@ -6773,22 +6773,26 @@ html {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
+/* line 59, src/sass/common.scss */
+section h3 {
+  font-size: 2.375rem; }
+/* line 62, src/sass/common.scss */
+section p {
+  font-size: 1.4375rem; }
+
 /* Section 1 */
-/* line 61, src/sass/common.scss */
+/* line 69, src/sass/common.scss */
 #banner {
   background: url(../img/ban-left.png) 100% 0 no-repeat; }
 
-/* line 65, src/sass/common.scss */
+/* line 73, src/sass/common.scss */
 .left-ban {
   margin-top: 8.5rem; }
-  /* line 67, src/sass/common.scss */
+  /* line 75, src/sass/common.scss */
   .left-ban h2 {
     font-size: 3.65625rem;
     text-transform: uppercase;
@@ -6797,20 +6801,19 @@ html {
     line-height: 1;
     letter-spacing: 13px;
     color: #4a4444; }
-    /* line 75, src/sass/common.scss */
+    /* line 83, src/sass/common.scss */
     .left-ban h2 b {
       font-size: 4.625rem;
       letter-spacing: 2px;
       color: #ed1651;
       display: block;
       font-weight: 600; }
-  /* line 83, src/sass/common.scss */
+  /* line 91, src/sass/common.scss */
   .left-ban p {
-    font-size: 1.4375rem;
     font-weight: 300;
     color: #454545;
     margin: 23px 0; }
-  /* line 89, src/sass/common.scss */
+  /* line 96, src/sass/common.scss */
   .left-ban .btn-dark {
     background-color: #521d2c;
     border-radius: 8px;
@@ -6819,53 +6822,53 @@ html {
     font-weight: 500;
     color: #fff;
     transition: all 0.35s ease; }
-    /* line 97, src/sass/common.scss */
+    /* line 104, src/sass/common.scss */
     .left-ban .btn-dark:hover {
       background-color: #34121c; }
 
 @media screen and (min-width: 768px) {
-  /* line 103, src/sass/common.scss */
+  /* line 110, src/sass/common.scss */
   header {
     padding: 70px 0 0; }
 
-  /* line 106, src/sass/common.scss */
+  /* line 113, src/sass/common.scss */
   #menu-wrapper, .menu-close {
     display: none; }
 
-  /* line 109, src/sass/common.scss */
+  /* line 116, src/sass/common.scss */
   .header-logo {
     width: 150px; }
 
-  /* line 112, src/sass/common.scss */
+  /* line 119, src/sass/common.scss */
   #menu--slide-right, .header-logo {
     vertical-align: bottom;
     font-size: 0; }
 
-  /* line 116, src/sass/common.scss */
+  /* line 123, src/sass/common.scss */
   #menu--slide-right {
     width: calc(100% - 154px);
     display: inline-block;
     text-align: right; }
 
-  /* line 121, src/sass/common.scss */
+  /* line 128, src/sass/common.scss */
   .menu-items {
     padding: 0;
     margin: 0; }
-    /* line 125, src/sass/common.scss */
+    /* line 132, src/sass/common.scss */
     .menu-items li {
       display: inline-block;
       margin-left: 5%; }
-      /* line 128, src/sass/common.scss */
+      /* line 135, src/sass/common.scss */
       .menu-items li a {
         display: block;
         color: #fff;
         font-size: 1.25rem; } }
 /* Sec 2 pos */
-/* line 139, src/sass/common.scss */
+/* line 146, src/sass/common.scss */
 #pos-sec {
   background: url(../img/purchase.png) 100% 100% no-repeat; }
 
-/* line 143, src/sass/common.scss */
+/* line 150, src/sass/common.scss */
 .pos h2 {
   font-size: 2.98688rem;
   color: #3c3c3c;
@@ -6873,31 +6876,30 @@ html {
   margin-bottom: 60px;
   font-weight: 600; }
 
-/* line 152, src/sass/common.scss */
+/* line 159, src/sass/common.scss */
 .purchase-box figure, .purchase-box figcaption {
   display: inline-block;
   vertical-align: middle;
   font-size: 0; }
-/* line 157, src/sass/common.scss */
+/* line 164, src/sass/common.scss */
 .purchase-box figure {
   width: 50%; }
-  /* line 159, src/sass/common.scss */
+  /* line 166, src/sass/common.scss */
   .purchase-box figure img {
     max-width: 100%; }
-/* line 163, src/sass/common.scss */
+/* line 170, src/sass/common.scss */
 .purchase-box figcaption {
   width: 25%;
   max-width: 340px;
   margin-left: 6%; }
-/* line 168, src/sass/common.scss */
+/* line 175, src/sass/common.scss */
 .purchase-box h3 {
-  font-size: 2.375rem;
   color: #212121;
   position: relative;
   text-transform: uppercase;
   margin-bottom: 15px;
   font-weight: 600; }
-  /* line 175, src/sass/common.scss */
+  /* line 181, src/sass/common.scss */
   .purchase-box h3:before {
     content: "Purchase";
     color: #212121;
@@ -6907,51 +6909,49 @@ html {
     top: -75px;
     text-transform: uppercase;
     left: 30px; }
-/* line 186, src/sass/common.scss */
+/* line 192, src/sass/common.scss */
 .purchase-box p {
-  font-size: 1.4375rem;
   color: #6e6e6e;
   margin-top: 0; }
 
 /* Sec 3 Reorder */
-/* line 194, src/sass/common.scss */
+/* line 199, src/sass/common.scss */
 #reorder {
   background: url(../img/reorder-bg.jpg) center no-repeat;
   background-size: cover; }
 
-/* line 198, src/sass/common.scss */
+/* line 203, src/sass/common.scss */
 .reorder-box {
   position: relative;
   background: url(../img/reorder-man.png) 0 -135px no-repeat;
   text-align: right; }
-  /* line 203, src/sass/common.scss */
+  /* line 208, src/sass/common.scss */
   .reorder-box figure, .reorder-box figcaption {
     display: inline-block;
     vertical-align: middle;
     font-size: 0; }
-  /* line 208, src/sass/common.scss */
+  /* line 213, src/sass/common.scss */
   .reorder-box figure {
     width: 50%;
     position: relative;
     z-index: 9; }
-    /* line 212, src/sass/common.scss */
+    /* line 217, src/sass/common.scss */
     .reorder-box figure img {
       max-width: 100%;
       margin: -60px 0 0; }
-  /* line 217, src/sass/common.scss */
+  /* line 222, src/sass/common.scss */
   .reorder-box figcaption {
     width: 25%;
     max-width: 340px;
     margin: 60px 6% 0 0; }
-  /* line 222, src/sass/common.scss */
+  /* line 227, src/sass/common.scss */
   .reorder-box h3 {
-    font-size: 2.375rem;
     color: #fff;
     position: relative;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 15px; }
-    /* line 229, src/sass/common.scss */
+    /* line 233, src/sass/common.scss */
     .reorder-box h3:before {
       content: "Reorder";
       color: #33171e;
@@ -6962,50 +6962,49 @@ html {
       top: -115px;
       text-transform: uppercase;
       left: 35px; }
-  /* line 241, src/sass/common.scss */
+  /* line 245, src/sass/common.scss */
   .reorder-box p {
-    font-size: 1.4375rem;
     color: #f5f5f5;
     margin-top: 0; }
-  /* line 246, src/sass/common.scss */
+  /* line 249, src/sass/common.scss */
   .reorder-box .reorder-man {
     position: absolute;
     left: 5%;
     bottom: 0; }
 
 /* promo-crm */
-/* line 254, src/sass/common.scss */
+/* line 257, src/sass/common.scss */
 #promo-crm {
   padding: 10% 0; }
 
-/* line 259, src/sass/common.scss */
+/* line 262, src/sass/common.scss */
 .crm-box figcaption, .crm-box figure {
   display: inline-block; }
-/* line 262, src/sass/common.scss */
+/* line 265, src/sass/common.scss */
 .crm-box figure {
   position: relative;
   z-index: 9; }
-  /* line 265, src/sass/common.scss */
+  /* line 268, src/sass/common.scss */
   .crm-box figure img {
     max-width: 100%;
     width: 100%;
     display: inline-block; }
-/* line 271, src/sass/common.scss */
+/* line 274, src/sass/common.scss */
 .crm-box .crm-lorem {
   background: transparent url("../img/promo-crm-left.jpg") left top no-repeat;
   background-size: 100%; }
-  /* line 274, src/sass/common.scss */
+  /* line 277, src/sass/common.scss */
   .crm-box .crm-lorem img {
     opacity: 0; }
-/* line 278, src/sass/common.scss */
+/* line 281, src/sass/common.scss */
 .crm-box .crm-lorem, .crm-box .crm-lorem-im2 {
   width: 50%;
   float: left; }
-/* line 282, src/sass/common.scss */
+/* line 285, src/sass/common.scss */
 .crm-box .crm-lorem {
   padding-right: 5px;
   position: relative; }
-  /* line 285, src/sass/common.scss */
+  /* line 288, src/sass/common.scss */
   .crm-box .crm-lorem span {
     position: absolute;
     top: 20px;
@@ -7016,49 +7015,46 @@ html {
     text-transform: uppercase;
     font-size: 30px;
     line-height: 1.2; }
-    /* line 295, src/sass/common.scss */
+    /* line 298, src/sass/common.scss */
     .crm-box .crm-lorem span b {
       line-height: 1;
       font-size: 50px;
       font-weight: 800; }
-/* line 302, src/sass/common.scss */
+/* line 305, src/sass/common.scss */
 .crm-box .crm-lorem-im2 {
   padding-left: 5px; }
-/* line 305, src/sass/common.scss */
+/* line 308, src/sass/common.scss */
 .crm-box figcaption {
   padding: 0 10% 0 3%; }
-/* line 308, src/sass/common.scss */
+/* line 311, src/sass/common.scss */
 .crm-box h3 {
-  font-size: 2.375rem;
   color: #ed1651;
   position: relative;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 15px; }
-/* line 316, src/sass/common.scss */
+/* line 318, src/sass/common.scss */
 .crm-box p {
-  font-size: 1.4375rem;
   color: #6e6e6e;
   margin-top: 0;
   padding-right: 20px; }
 
 /* security */
-/* line 325, src/sass/common.scss */
+/* line 326, src/sass/common.scss */
 #security {
   background: url(../img/security-bg.jpg) center no-repeat;
   padding: 7% 0; }
-  /* line 329, src/sass/common.scss */
+  /* line 330, src/sass/common.scss */
   #security .secure-box figure, #security .secure-box figcaption {
     display: inline-block;
     vertical-align: middle;
     font-size: 0; }
-  /* line 335, src/sass/common.scss */
+  /* line 336, src/sass/common.scss */
   #security .secure-box figure img {
     max-width: 100%;
     width: 100%; }
-  /* line 342, src/sass/common.scss */
+  /* line 343, src/sass/common.scss */
   #security .secure-box h3 {
-    font-size: 2.375rem;
     color: #ed1651;
     position: relative;
     text-transform: uppercase;
@@ -7066,16 +7062,15 @@ html {
     font-weight: 600; }
   /* line 350, src/sass/common.scss */
   #security .secure-box p {
-    font-size: 1.4375rem;
     color: #6e6e6e;
     margin-top: 0; }
 
 /* Inventory */
-/* line 362, src/sass/common.scss */
+/* line 361, src/sass/common.scss */
 #inventory {
   background: url(../img/inventory-bg.jpg) center no-repeat;
   padding: 7% 0; }
-  /* line 365, src/sass/common.scss */
+  /* line 364, src/sass/common.scss */
   #inventory .inventory-box {
     background-color: #fff;
     position: relative;
@@ -7085,7 +7080,7 @@ html {
     height: 500px;
     right: -150px;
     box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.5); }
-    /* line 374, src/sass/common.scss */
+    /* line 373, src/sass/common.scss */
     #inventory .inventory-box figure {
       width: 610px;
       height: 380px;
@@ -7095,54 +7090,115 @@ html {
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
-    /* line 382, src/sass/common.scss */
+    /* line 381, src/sass/common.scss */
     #inventory .inventory-box figcaption {
       padding-left: 350px; }
-    /* line 386, src/sass/common.scss */
+    /* line 385, src/sass/common.scss */
     #inventory .inventory-box figure img {
       max-width: 100%;
       width: 100%;
       border-radius: 5px; }
-    /* line 394, src/sass/common.scss */
+    /* line 393, src/sass/common.scss */
     #inventory .inventory-box h3 {
-      font-size: 2.375rem;
       color: #ed1651;
       position: relative;
       text-transform: uppercase;
       margin: 15px 0;
       font-weight: 600; }
-    /* line 402, src/sass/common.scss */
+    /* line 400, src/sass/common.scss */
     #inventory .inventory-box p {
-      font-size: 1.4375rem;
       color: #6e6e6e;
       margin-top: 0; }
 
-/* Inventory */
-/* line 414, src/sass/common.scss */
+/* Accounting */
+/* line 411, src/sass/common.scss */
 #accounting {
   padding: 7% 0; }
-  /* line 418, src/sass/common.scss */
+  /* line 415, src/sass/common.scss */
   #accounting .accounting-box figure, #accounting .accounting-box figcaption {
     display: inline-block;
     vertical-align: middle;
     font-size: 0; }
-  /* line 424, src/sass/common.scss */
+  /* line 421, src/sass/common.scss */
   #accounting .accounting-box figure img {
     max-width: 100%;
     width: 100%; }
-  /* line 431, src/sass/common.scss */
+  /* line 428, src/sass/common.scss */
   #accounting .accounting-box h3 {
-    font-size: 2.375rem;
     color: #ed1651;
     position: relative;
     text-transform: uppercase;
     margin: 15px 0;
     font-weight: 600; }
-  /* line 439, src/sass/common.scss */
+  /* line 435, src/sass/common.scss */
   #accounting .accounting-box p {
-    font-size: 1.4375rem;
     color: #6e6e6e;
     margin-top: 0; }
+
+/* Sales */
+/* line 446, src/sass/common.scss */
+#sales {
+  background: url(../img/sales-bg.jpg) center no-repeat;
+  background-size: cover; }
+  /* line 450, src/sass/common.scss */
+  #sales .sales-box {
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+    /* line 452, src/sass/common.scss */
+    #sales .sales-box figure {
+      margin: -50px 0; }
+      /* line 454, src/sass/common.scss */
+      #sales .sales-box figure img {
+        box-shadow: 0 0 60px -7px rgba(0, 0, 0, 0.15);
+        border: 12px solid #fff;
+        border-radius: 6px;
+        max-width: 100%;
+        width: 100%; }
+    /* line 464, src/sass/common.scss */
+    #sales .sales-box h3 {
+      color: #fff;
+      position: relative;
+      text-transform: uppercase;
+      margin: 15px 0;
+      font-weight: 600; }
+    /* line 471, src/sass/common.scss */
+    #sales .sales-box p {
+      color: #fff;
+      margin-top: 0; }
+
+/* Business Intelligence */
+/* line 482, src/sass/common.scss */
+#buz {
+  background: url(../img/security-bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 10% 0 9%; }
+  /* line 486, src/sass/common.scss */
+  #buz .buz-box {
+    position: relative; }
+    /* line 490, src/sass/common.scss */
+    #buz .buz-box figure img {
+      max-width: 100%;
+      width: 100%; }
+    /* line 495, src/sass/common.scss */
+    #buz .buz-box figcaption {
+      position: absolute;
+      bottom: -110px;
+      right: 140px;
+      background-color: #ed1651;
+      padding: 0 25px;
+      border-radius: 6px; }
+    /* line 503, src/sass/common.scss */
+    #buz .buz-box h3 {
+      color: #fff;
+      position: relative;
+      text-transform: uppercase;
+      margin: 15px 0;
+      font-weight: 600; }
+    /* line 510, src/sass/common.scss */
+    #buz .buz-box p {
+      color: #fff;
+      margin-top: 0; }
 
 /* line 6, src/sass/style_bkp.scss */
 body {
