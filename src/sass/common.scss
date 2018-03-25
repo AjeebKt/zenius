@@ -59,8 +59,17 @@ section {
 	h3 {
 		font-size: rem(38);
 	}
+	h4 {
+		font-size: 40px;
+		color: #3c3c3c;
+	}
 	p {
 		font-size: rem(23);
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
 	}
 }
 
@@ -515,4 +524,128 @@ section {
 }
 @media screen and (min-width: $screen-sm) {
 	#menu--slide-right {}
+}
+
+/* Business Intelligence */
+#sol-high {
+	// background: url(../img/security-bg.jpg) center no-repeat;
+	// background-size: cover;
+	padding: 4% 0 7%;
+	text-align: center;
+	background-color: $light;
+	.sbox {
+		@include box-shadow(0 0 20px -3px rgba(0, 0, 0, 0.15));
+		border-radius: 6px;
+		padding: 15px;
+	}
+	ul {
+		font-size: 0;
+		li {
+			display: inline-block;
+			width: 25%;
+			padding: 10px;
+			vertical-align: top;
+		}
+		span {font-size: 14px; height: 60px;width: 60px;display: inline-block;}
+		p {
+			font-size: 18px;
+			color: #43546f;
+			min-height: 50px;
+			margin-top: 10px;
+		}
+	}
+}
+@media screen and (min-width: $screen-sm) {
+	#menu--slide-right {}
+}
+
+/* Chain-sol */
+#chain-sol {
+	background: url(../img/chain-sol.jpg) center no-repeat;
+	background-size: cover;
+	padding: 5% 0;
+	h4 {
+		padding-right: 70px;
+	}
+	ul {
+		li {
+			padding-left: 45px;
+			font-size: 23px;
+			color: #43546f;
+			margin-bottom: 20px;
+			background: url('../img/tick.png') left center no-repeat;
+		}
+	}
+}
+@media screen and (min-width: $screen-sm) {
+	#menu--slide-right {}
+}
+
+/* Brand */
+#brand {
+	background: $light;
+	padding: 5% 0;
+	text-align: center;
+	h4 {
+		margin-top: 10px;
+	}
+	ul {
+		font-size: 0;
+	}
+	li {
+		display: inline-block;
+		width: 25%;
+	}
+}
+@media screen and (min-width: $screen-sm) {
+	#menu--slide-right {}
+}
+
+/* Footer */
+footer {
+	background: url(../img/footer-bg.png) center no-repeat;
+	background-size: cover;
+	// padding: 5% 0;
+	img {
+		opacity: 0;
+		visibility: hidden;
+		max-width: 100%;
+	}
+	p {
+		margin: 0;
+		font-size: 16px;
+		color: $light;
+		text-align: right;
+	}
+	ul {
+		font-size: 0;
+		padding: 0;
+		text-align: left;
+		li {
+			display: inline-block;
+			margin-right: 15px;
+		}
+	}
+	a {
+		color: $light;
+		display: block;
+		width: 34px;
+		height: 34px;
+		background-size: 100%;
+	}
+	a.instagram {
+		background: url('../img/tick.png') left center no-repeat;
+	}
+	a.facebook {
+		background: url('../img/tick.png') left center no-repeat;
+	}
+	a.twitter {
+		background: url('../img/tick.png') left center no-repeat;
+	}
+	a.linkedin {
+		background: url('../img/tick.png') left center no-repeat;
+	}
+	a.youtube {
+		background: url('../img/tick.png') left center no-repeat;
+	}
 }
