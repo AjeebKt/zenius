@@ -39,7 +39,9 @@ html {
 	margin-bottom: 30px;
 	padding-bottom: 30px;
 }
-
+body {
+	overflow-x: hidden;
+}
 
 /* Header */
 .navigation {
@@ -344,6 +346,7 @@ section {
 /* security */
 #security {
 	background: url(../img/security-bg.jpg) center no-repeat;
+	background-size: cover;
 	padding: 7% 0;
 	.secure-box {
 		figure, figcaption {
@@ -379,6 +382,7 @@ section {
 /* Inventory */
 #inventory {
 	background: url(../img/inventory-bg.jpg) center no-repeat;
+	background-size: cover;
 	padding: 7% 0;
 	.inventory-box {
 		background-color: $light;
@@ -654,23 +658,23 @@ footer {
 	a {
 		color: $light;
 		display: block;
-		width: 34px;
-		height: 34px;
+		width: 36px;
+		height: 36px;
 		background-size: 100%;
 	}
 	a.instagram {
-		background: url('../img/tick.png') left center no-repeat;
+		background: url('../img/instagram.jpg') center no-repeat;
 	}
 	a.facebook {
-		background: url('../img/tick.png') left center no-repeat;
+		background: url('../img/facebook.jpg') center no-repeat;
 	}
 	a.twitter {
-		background: url('../img/tick.png') left center no-repeat;
+		background: url('../img/twitter.jpg') center no-repeat;
 	}
 	a.linkedin {
-		background: url('../img/tick.png') left center no-repeat;
+		background: url('../img/linkedin.jpg') center no-repeat;
 	}
 	a.youtube {
-		background: url('../img/tick.png') left center no-repeat;
+		background: url('../img/youtube.jpg') center no-repeat;
 	}
 }
