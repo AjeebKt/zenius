@@ -85,11 +85,72 @@
 			</li>
 		</ul>
 	</section>
+	<section id="sec_listing">
+		<div class="container">
+			<ul class="we-listing row">
+				<li class="col-xs-6 col-sm-4 col-mac">
+					<figure>
+						<img src="./img/ico-1.png" alt="icon" class="img-responsive">
+					</figure>
+					<h3>LOST &amp; FOUND</h3>
+					<p>Find your lost luggage with a touch of a button, and get instant notifications if found by someone.</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li class="col-xs-6 col-sm-4 col-mac">
+					<figure>
+						<img src="./img/ico-2.png" alt="icon" class="img-responsive">
+					</figure>
+					<h3>FOR AIRLINE CREW</h3>
+					<p>Just scan your tag with NFC or your QR code scanner and add your items in our app. You are ready to travel easy and securely in seconds.</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li class="col-xs-6 col-sm-4 col-mac">
+					<figure>
+						<img src="./img/ico-3.png" alt="icon" class="img-responsive">
+					</figure>
+					<h3>FOR BUSINESS</h3>
+					<p>Our tags+app combo is the best promotional item for your business. We provide a “Branded Experience” specifically designed for your company</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li class="col-xs-6 col-sm-4 col-mac">
+					<figure>
+						<img src="./img/ico-4.png" alt="icon" class="img-responsive">
+					</figure>
+					<h3>GADGET FINDER</h3>
+					<p>Find your lost luggage with a touch of a button, and get instant notifications if found by someone.</p>
+					<a href="#">Buy Now</a>
+				</li>
+				<li class="col-xs-6 col-sm-4 col-mac">
+					<figure>
+						<img src="./img/ico-5.png" alt="icon" class="img-responsive">
+					</figure>
+					<h3>SHARE TRAVELS</h3>
+					<p>Just scan your tag with NFC or your QR code scanner and add your items in our app. You are ready to travel easy and securely in seconds.</p>
+					<a href="#">Buy Now</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="lost_found">
+		<!-- <img src="./img/sec-2-bg.jpg" alt="lost_found_bg"> -->
+		<div class="container vertical-flex">
+			<div class="col-sm-6 col-md-5 col-xs-12 lost-found">
+				<h2>LOST &amp; FOUND</h2>
+				<p>And each day thousands of pieces of luggage are being found. But most of the found items are never returned to their owner. Our innovative luggage tags are durable and maintain your privacy but still make it as easy as possible for your luggage to be returned.</p>
+			</div>
+		</div>
+	</section>
+	<section id="for-business">
+		<h2><div>FOR BUSINESSES</div> <small>The ideal promotional item</small></h2>
+	</section>
 	<div id="fade"></div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
 	<script>
 		$(document).ready(function() {
+			// Mobile Menu 
 			if (window.matchMedia('(max-width: 991px)').matches) {
 				$(".menu-toggle").click(function() {
 					$(this).toggleClass('active');
@@ -98,6 +159,7 @@
 				});
 			}
 
+			// Top Banner Slider
 			$('.top-banner').slick({
 				dots: false,
 				autoplay: true,
@@ -110,9 +172,36 @@
 				nextArrow: '<span class="sli-arrow right"></span>',
 			});
 
+
+			// For Animation
+			function onScrollInit(items, trigger) {
+			    items.each(function() {
+			        var osElement = $(this),
+			            osAnimationClass = osElement.attr('data-os-animation'),
+			            osAnimationDelay = osElement.attr('data-os-animation-delay');
+
+			        osElement.css({
+			            '-webkit-animation-delay': osAnimationDelay,
+			            '-moz-animation-delay': osAnimationDelay,
+			            'animation-delay': osAnimationDelay
+			        });
+
+			        var osTrigger = (trigger) ? trigger : osElement;
+
+			        osTrigger.waypoint(function() {
+			            osElement.addClass('animated').addClass(osAnimationClass);
+			        }, {
+			            triggerOnce: true,
+			            offset: '90%'
+			        });
+			    });
+			}
+
+			onScrollInit($('.os-animation'));
+			onScrollInit($('.staggered-animation'), $('.staggered-animation-container'));
+
+
 		});
 	</script>
-	<script src="js/slick.min.js"></script>
-	<!-- <script src="js/wow.js"></script> -->
 </body>
 </html>
