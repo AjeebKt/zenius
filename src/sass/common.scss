@@ -340,6 +340,7 @@ header {
 
 /* Section 4 For Business */
 #for-business {
+	padding: 30px 0 20px;
 	h2 {
 		text-align: center;
 		font-size: rem(48);
@@ -350,6 +351,117 @@ header {
 			font-size: rem(18);
 			padding-top: 8px;
 			border-top: 2px solid $text-header-color;
+		}
+	}
+}
+.div-sec {
+	padding: 30px 0;
+	figure {
+		padding: 20px;
+	}
+	h3 {
+		font-size: rem(48);
+		color: $text-header-color;
+		font-weight: $font-light;
+		margin-bottom: 20px;
+		&:before {
+			content: "";
+			background-size: 100%;
+			background-position: center;
+			display: inline-block;
+			height: 38px;
+			width: 38px;
+			// vertical-align: middle;
+			margin-right: 10px;
+		}
+		&.air {
+			&:before {
+				background-image: url('../img/air-ico.png');
+				background-repeat: no-repeat;
+			}
+		}
+		&.buz {
+			&:before {
+				background-image: url('../img/buz-ico.png');
+				background-repeat: no-repeat;
+			    height: 54px;
+			    width: 54px;
+			    vertical-align: sub;
+			}
+		}
+		&.gdf {
+			&:before {
+				background-image: url('../img/gadg-ico.png');
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	p {
+		font-size: rem(16);
+		color: $text-color;
+	}
+}
+@media screen and (max-width: $screen-sm-max) {
+	#for-business {
+		h2 {
+			font-size: rem(40);
+		}
+	}
+	.div-sec {
+		h3 {
+			margin-top: 0;
+			font-size: rem(40);
+			&:before {
+				height: 31px;
+				width: 31px;
+			}
+			&.buz {
+				&:before {
+				    height: 48px;
+				    width: 48px;
+				    vertical-align: sub;
+				}
+			}
+		}
+		p {
+			font-size: rem(14);
+		}
+	}
+}
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+	.div-sec {
+		figure {
+			padding: 10px;
+			img {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width: $screen-xs-max) {
+	.div-sec {
+		text-align: center;
+		figure img {
+			margin: 0 auto;
+		}
+	}
+}
+@media screen and (max-width: 580px) {
+	#for-business h2 {
+		font-size: rem(34);
+	} 
+	.div-sec h3 {
+		font-size: rem(30);
+		&:before {
+			height: 25px;
+			width: 25px;
+		}
+		&.buz {
+			&:before {
+			    height: 40px;
+			    width: 40px;
+			    vertical-align: sub;
+			}
 		}
 	}
 }
