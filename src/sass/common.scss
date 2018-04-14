@@ -82,6 +82,12 @@ section {
 .os-animation.animated {
     opacity: 1;
 }
+section {
+	h3, h2 {
+		font-weight: $font-light;
+		text-transform: uppercase;
+	}
+}
 
 
 /* Header */
@@ -561,6 +567,56 @@ header {
 	@media screen and (max-width: $screen-xs-max) {
 		h5 {
 			display: block;
+		}
+	}
+}
+
+/* Personal tag */
+#personal_tag {
+	text-align: center;
+	padding: 40px 0;
+	h2 {
+		font-size: rem(48);
+		color: $text-header-color;
+		margin: 0 0 50px;
+		small {
+			font-size: rem(18);
+			text-transform: none;
+			display: block;
+			font-weight: $font-regular;
+			margin-top: 8px;
+		}
+	}
+	p {
+		font-size: rem(14);
+		color: $text-color;
+		font-weight: $font-light;
+	}
+	a {
+		padding: 12px 10px;
+	}
+	.col-tag {
+		padding: 0 3.5%;
+	}
+	@media screen and (max-width: $screen-sm-max) {
+		h2 {
+			font-size: rem(40);
+			small {
+				margin-top: 15px;
+			}
+		}
+	}
+	@media screen and (max-width: $screen-sm-max) {
+		.col-tag {
+			margin: 25px 0;
+		}
+	}
+	@media screen and (max-width: 580px) {
+		h2 {
+			font-size: rem(28);
+			small {
+				font-size: rem(16);
+			}
 		}
 	}
 }
