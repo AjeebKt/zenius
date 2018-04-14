@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "plugins/slick";
+@import "plugins/font-awesome";
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
@@ -122,26 +123,39 @@ header {
 	display: none;
 	z-index: 500;
 }
-@media screen and (min-width: $screen-md) {
-	.logo, .menu-container {
-		display: inline-block;
-		vertical-align: middle;
-	}
+.logo {
+	max-width: 100%;
+}
+@media screen and (min-width: $screen-lg) {
 	.menu {
-		font-size: 0;
 		li {
-			display: inline-block;
-			vertical-align: top;
 			a {
 				padding: 25px 20px;
 			}
 		}
 	}
 }
-@media screen and (max-width: $screen-sm-max) {
-	header {
-		padding: 12px 0;
+@media screen and (min-width: $screen-md) {
+	.logo, .menu-container {
+		display: inline-block;
+		vertical-align: middle;
 	}
+	.menu-container {float: right;}
+	.menu {
+		font-size: 0;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			a {
+				padding: 25px 15px;
+			}
+		}
+	}
+}
+@media screen and (max-width: $screen-sm-max) {
+	// header {
+	// 	padding: 12px 0;
+	// }
 	.menu-toggle {
 		position: absolute;
 		right: 0;
@@ -266,6 +280,9 @@ header {
 }
 
 /* Section 2 Listing */
+#sec_listing {
+	overflow: hidden;
+}
 .we-listing {
 	text-align: center;
 	font-size: 0;
@@ -618,5 +635,44 @@ header {
 				font-size: rem(16);
 			}
 		}
+	}
+}
+
+/* Footer */
+#footer {
+	padding: 60px 10px;
+	background-color: $text-header-color;
+	ul {
+		li {
+			border-bottom: 1px solid $text-color;
+			a {
+				display: block;
+				padding: 5px 0;
+				text-transform: uppercase;
+				color: $text-color;
+				font-size: 12px;
+				text-decoration: none;
+				&:hover {
+					color: $light;
+				}
+			}
+		}
+	}
+	.col-foot {
+		padding: 0 2%;
+	}
+	h5 {
+		margin: 0 0 20px;
+		font-size: rem(18);
+		font-weight: $font-regular;
+		text-transform: uppercase;
+	}
+	p {
+		margin-top: 15px;
+	}
+	@media screen and (max-width: $screen-sm-max) {
+	 	.about {
+	 		margin-bottom: 30px;
+	 	}
 	}
 }
