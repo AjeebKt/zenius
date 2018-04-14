@@ -311,6 +311,8 @@ header {
 	background: transparent url('../img/sec-2-bg.jpg') left top no-repeat;
 	background-size: cover;
 	height: 481px;
+}
+.lost-found {
 	img {
 		visibility: hidden;
 		opacity: 0;
@@ -462,6 +464,103 @@ header {
 			    width: 40px;
 			    vertical-align: sub;
 			}
+		}
+	}
+}
+
+/* share_travel */
+#share_travel {
+	background: transparent url('../img/share-bg.png') left top no-repeat;
+	background-size: cover;
+	height: 483px;
+	h2 {
+		&:before {
+			content: "";
+			display: inline-block;
+			height: 40px;
+			width: 40px;
+			margin: -5px 10px 0 0;
+			vertical-align: middle;
+			background: transparent url('../img/share-ico.png') center no-repeat;
+			background-size: 100%;
+		}
+	}
+}
+/* clients */
+#clients {
+	text-align: center;
+	padding: 0 0 50px;
+	h6 {
+		font-weight: $font-light;
+		font-size: rem(20);
+		color: $text-header-color;
+	}
+	ul {
+		font-size: 0;
+		li {
+			padding: 0 0.5%;
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+		img {
+			margin: 0 auto;
+		}
+	}
+	@media screen and (max-width: $screen-sm-max) {
+		ul {
+			li {
+			}
+			img {
+				max-width: 80%;
+			}
+		}
+	}
+	@media screen and (max-width: $screen-xs-max) {
+		ul {
+			li {
+				width: 33.3333%;
+			}
+		}
+	}
+	@media screen and (max-width: 520px) {
+		ul {
+			li {
+				width: 50%;
+			}
+		}
+	}
+}
+
+/* Contact Strip  */
+#strip_contact {
+	padding: 20px 0;
+	background-color: $brand-primary;
+	text-align: center;
+	h5 {
+		font-size: rem(24);
+		font-weight: $font-regular;
+		margin: 15px 0;
+	}
+	.btn-white {
+		font-size: rem(17);
+		border: 2px solid $light;
+		padding: 5px 16px;
+		margin: 0 20px;
+		&:hover {
+			background-color: #fff;
+			color: $text-header-color;
+			@include transition(all 0.35s ease);
+		}
+	}
+	h5, a {
+		color: $light;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	@media screen and (max-width: $screen-xs-max) {
+		h5 {
+			display: block;
 		}
 	}
 }
