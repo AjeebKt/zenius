@@ -6,11 +6,13 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create();
 
-var DEST = 'build/';
+
+var project = 'koolKrew',
+    DEST = 'koolKrew/build/';
 
 
 gulp.task('sass', () =>
-  sass('src/sass/*.scss', {
+  sass(project+'/src/sass/*.scss', {
       style: 'nested',
       lineNumbers: true
     })
@@ -26,15 +28,15 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: './'
         },
-        startPath: './build/index.html'
+        startPath: './'+project+'/build/index.html'
     });
 });
 
 gulp.task('watch', function() {
   // Watch .html files
-  gulp.watch('build/*.html', browserSync.reload);
+  gulp.watch('./'+project+'build/*.html', browserSync.reload);
   // Watch .scss files
-  gulp.watch('src/sass/*.scss', ['sass']);
+  gulp.watch('./'+project+'src/sass/*.scss', ['sass']);
 });
 
 // Default Task
