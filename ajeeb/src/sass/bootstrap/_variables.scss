@@ -3,7 +3,7 @@ $browser-context: 16; // Default
 @function rem($pixels, $context: $browser-context) {
 	@return #{$pixels/$context}rem
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
 //
 // Variables
 // --------------------------------------------------
@@ -20,7 +20,8 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #5abb9a !default; // #337ab7
+$brand-primary:         #ffe164 !default; // #eb4c49
+$brand-secondary:       #eb4c49 !default; // 
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -57,7 +58,7 @@ $link-hover-decoration: underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 // $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-sans-serif:  'Poppins', sans-serif !default;
+$font-family-sans-serif:  'Roboto', sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;

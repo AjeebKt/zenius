@@ -7,8 +7,8 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 
-var project = 'koolKrew',
-    DEST = 'koolKrew/build/';
+var project = 'ajeeb',
+    DEST = 'ajeeb/build/';
 
 
 gulp.task('sass', () =>
@@ -34,9 +34,9 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', function() {
   // Watch .html files
-  gulp.watch('./'+project+'build/*.html', browserSync.reload);
+  gulp.watch('./'+project+'/build/*.html', browserSync.reload);
   // Watch .scss files
-  gulp.watch('./'+project+'src/sass/*.scss', ['sass']);
+  gulp.watch('./'+project+'/src/sass/*.scss', ['sass']);
 });
 
 // Default Task
