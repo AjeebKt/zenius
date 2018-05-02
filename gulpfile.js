@@ -7,14 +7,14 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 
-var project = 'ajeeb',
-    DEST = 'ajeeb/build/';
+var project = 'test',
+    DEST = 'test/build/';
 
 
 gulp.task('sass', () =>
   sass(project+'/src/sass/*.scss', {
-      style: 'nested',
-      lineNumbers: true
+      // style: 'nested',
+      // lineNumbers: true
     })
     .on('error', sass.logError)
     .pipe(autoprefixer('last 8 versions', '> 5%'))
